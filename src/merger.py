@@ -35,9 +35,16 @@ def merge_excel_files(input_directory, output_file):
     # Concatenate all dataframes into a single dataframe
     merged_df = pd.concat(dataframes, ignore_index=True)
 
+    # We also check that they are no duplicate rows
+    # and inform the user if there are any
+    initial_row_count = len(merged_df)
+    merged_df.drop_duplicates(inplace=True)
+    final_row_count = len(merged_df)
+    if initial_row_count != final_row_count:
+        print(f'Removed {initial_row_count - final_row_count} duplicate rows from the merged dataframe.')
+
     # Save the merged dataframe to a CSV file
     merged_df.to_csv(output_file, index=False)
-    print(f'Merged data saved to {output_file}')
     return merged_df
 
 
