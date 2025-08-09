@@ -1,0 +1,1108 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "Bar chart of species counts by Family",
+    "width": 400,
+    "height": 200,
+    "padding": 5,
+    "data": [
+        {
+            "name": "table",
+            "values": [
+                {
+                    "Family": "Orchidaceae",
+                    "Count": 4278
+                },
+                {
+                    "Family": "Cactaceae",
+                    "Count": 2235
+                },
+                {
+                    "Family": "Asphodelaceae",
+                    "Count": 1292
+                },
+                {
+                    "Family": "Araceae",
+                    "Count": 814
+                },
+                {
+                    "Family": "Bromeliaceae",
+                    "Count": 786
+                },
+                {
+                    "Family": "Asparagaceae",
+                    "Count": 647
+                },
+                {
+                    "Family": "Crassulaceae",
+                    "Count": 644
+                },
+                {
+                    "Family": "Aizoaceae",
+                    "Count": 631
+                },
+                {
+                    "Family": "Apocynaceae",
+                    "Count": 419
+                },
+                {
+                    "Family": "Euphorbiaceae",
+                    "Count": 375
+                },
+                {
+                    "Family": "Malvaceae",
+                    "Count": 287
+                },
+                {
+                    "Family": "Geraniaceae",
+                    "Count": 286
+                },
+                {
+                    "Family": "Asteraceae",
+                    "Count": 266
+                },
+                {
+                    "Family": "Fabaceae",
+                    "Count": 250
+                },
+                {
+                    "Family": "Amaryllidaceae",
+                    "Count": 233
+                },
+                {
+                    "Family": "Nepenthaceae",
+                    "Count": 228
+                },
+                {
+                    "Family": "Passifloraceae",
+                    "Count": 220
+                },
+                {
+                    "Family": "Begoniaceae",
+                    "Count": 219
+                },
+                {
+                    "Family": "Ericaceae",
+                    "Count": 218
+                },
+                {
+                    "Family": "Polypodiaceae",
+                    "Count": 216
+                },
+                {
+                    "Family": "Rubiaceae",
+                    "Count": 214
+                },
+                {
+                    "Family": "Nymphaeaceae",
+                    "Count": 201
+                },
+                {
+                    "Family": "Sarraceniaceae",
+                    "Count": 186
+                },
+                {
+                    "Family": "Arecaceae",
+                    "Count": 166
+                },
+                {
+                    "Family": "Acanthaceae",
+                    "Count": 153
+                },
+                {
+                    "Family": "Lamiaceae",
+                    "Count": 145
+                },
+                {
+                    "Family": "Solanaceae",
+                    "Count": 138
+                },
+                {
+                    "Family": "Gesneriaceae",
+                    "Count": 136
+                },
+                {
+                    "Family": "Iridaceae",
+                    "Count": 120
+                },
+                {
+                    "Family": "Myrtaceae",
+                    "Count": 110
+                },
+                {
+                    "Family": "Piperaceae",
+                    "Count": 108
+                },
+                {
+                    "Family": "Marantaceae",
+                    "Count": 99
+                },
+                {
+                    "Family": "Lentibulariaceae",
+                    "Count": 95
+                },
+                {
+                    "Family": "Rutaceae",
+                    "Count": 94
+                },
+                {
+                    "Family": "Aspleniaceae",
+                    "Count": 87
+                },
+                {
+                    "Family": "Onagraceae",
+                    "Count": 85
+                },
+                {
+                    "Family": "Droseraceae",
+                    "Count": 85
+                },
+                {
+                    "Family": "Zingiberaceae",
+                    "Count": 71
+                },
+                {
+                    "Family": "Proteaceae",
+                    "Count": 68
+                },
+                {
+                    "Family": "Araliaceae",
+                    "Count": 60
+                },
+                {
+                    "Family": "Moraceae",
+                    "Count": 60
+                },
+                {
+                    "Family": "Zamiaceae",
+                    "Count": 57
+                },
+                {
+                    "Family": "Primulaceae",
+                    "Count": 54
+                },
+                {
+                    "Family": "Bignoniaceae",
+                    "Count": 53
+                },
+                {
+                    "Family": "Vitaceae",
+                    "Count": 51
+                },
+                {
+                    "Family": "Selaginellaceae",
+                    "Count": 48
+                },
+                {
+                    "Family": "Pteridaceae",
+                    "Count": 46
+                },
+                {
+                    "Family": "Oleaceae",
+                    "Count": 44
+                },
+                {
+                    "Family": "Aristolochiaceae",
+                    "Count": 44
+                },
+                {
+                    "Family": "Cyatheaceae",
+                    "Count": 39
+                },
+                {
+                    "Family": "Balsaminaceae",
+                    "Count": 39
+                },
+                {
+                    "Family": "Nelumbonaceae",
+                    "Count": 38
+                },
+                {
+                    "Family": "Plantaginaceae",
+                    "Count": 38
+                },
+                {
+                    "Family": "Musaceae",
+                    "Count": 38
+                },
+                {
+                    "Family": "Boraginaceae",
+                    "Count": 37
+                },
+                {
+                    "Family": "Commelinaceae",
+                    "Count": 34
+                },
+                {
+                    "Family": "Poaceae",
+                    "Count": 34
+                },
+                {
+                    "Family": "Rosaceae",
+                    "Count": 33
+                },
+                {
+                    "Family": "Dioscoreaceae",
+                    "Count": 32
+                },
+                {
+                    "Family": "Pittosporaceae",
+                    "Count": 32
+                },
+                {
+                    "Family": "Campanulaceae",
+                    "Count": 31
+                },
+                {
+                    "Family": "Cucurbitaceae",
+                    "Count": 31
+                },
+                {
+                    "Family": "Didiereaceae",
+                    "Count": 29
+                },
+                {
+                    "Family": "Celastraceae",
+                    "Count": 26
+                },
+                {
+                    "Family": "Sapindaceae",
+                    "Count": 26
+                },
+                {
+                    "Family": "Verbenaceae",
+                    "Count": 25
+                },
+                {
+                    "Family": "Melastomataceae",
+                    "Count": 25
+                },
+                {
+                    "Family": "Sapotaceae",
+                    "Count": 24
+                },
+                {
+                    "Family": "Costaceae",
+                    "Count": 23
+                },
+                {
+                    "Family": "Theaceae",
+                    "Count": 23
+                },
+                {
+                    "Family": "Scrophulariaceae",
+                    "Count": 23
+                },
+                {
+                    "Family": "Lauraceae",
+                    "Count": 21
+                },
+                {
+                    "Family": "Lythraceae",
+                    "Count": 20
+                },
+                {
+                    "Family": "Cannaceae",
+                    "Count": 20
+                },
+                {
+                    "Family": "Strelitziaceae",
+                    "Count": 20
+                },
+                {
+                    "Family": "Cyperaceae",
+                    "Count": 19
+                },
+                {
+                    "Family": "Combretaceae",
+                    "Count": 19
+                },
+                {
+                    "Family": "Anacardiaceae",
+                    "Count": 19
+                },
+                {
+                    "Family": "Convolvulaceae",
+                    "Count": 18
+                },
+                {
+                    "Family": "Restionaceae",
+                    "Count": 18
+                },
+                {
+                    "Family": "Saxifragaceae",
+                    "Count": 17
+                },
+                {
+                    "Family": "Cycadaceae",
+                    "Count": 17
+                },
+                {
+                    "Family": "Podocarpaceae",
+                    "Count": 17
+                },
+                {
+                    "Family": "Pandanaceae",
+                    "Count": 17
+                },
+                {
+                    "Family": "Urticaceae",
+                    "Count": 16
+                },
+                {
+                    "Family": "Rhamnaceae",
+                    "Count": 16
+                },
+                {
+                    "Family": "Aquifoliaceae",
+                    "Count": 15
+                },
+                {
+                    "Family": "Hydrangeaceae",
+                    "Count": 15
+                },
+                {
+                    "Family": "Fagaceae",
+                    "Count": 15
+                },
+                {
+                    "Family": "Meliaceae",
+                    "Count": 15
+                },
+                {
+                    "Family": "Lecythidaceae",
+                    "Count": 15
+                },
+                {
+                    "Family": "Violaceae",
+                    "Count": 14
+                },
+                {
+                    "Family": "Cupressaceae",
+                    "Count": 14
+                },
+                {
+                    "Family": "Ebenaceae",
+                    "Count": 14
+                },
+                {
+                    "Family": "Magnoliaceae",
+                    "Count": 13
+                },
+                {
+                    "Family": "Phyllanthaceae",
+                    "Count": 13
+                },
+                {
+                    "Family": "Caryophyllaceae",
+                    "Count": 12
+                },
+                {
+                    "Family": "Anacampserotaceae",
+                    "Count": 12
+                },
+                {
+                    "Family": "Clusiaceae",
+                    "Count": 12
+                },
+                {
+                    "Family": "Caprifoliaceae",
+                    "Count": 12
+                },
+                {
+                    "Family": "Malpighiaceae",
+                    "Count": 12
+                },
+                {
+                    "Family": "Welwitschiaceae",
+                    "Count": 11
+                },
+                {
+                    "Family": "Oxalidaceae",
+                    "Count": 11
+                },
+                {
+                    "Family": "Polygonaceae",
+                    "Count": 11
+                },
+                {
+                    "Family": "Annonaceae",
+                    "Count": 11
+                },
+                {
+                    "Family": "Pedaliaceae",
+                    "Count": 10
+                },
+                {
+                    "Family": "Marattiaceae",
+                    "Count": 10
+                },
+                {
+                    "Family": "Salicaceae",
+                    "Count": 10
+                },
+                {
+                    "Family": "Thymelaeaceae",
+                    "Count": 10
+                },
+                {
+                    "Family": "Hypericaceae",
+                    "Count": 10
+                },
+                {
+                    "Family": "Calceolariaceae",
+                    "Count": 10
+                },
+                {
+                    "Family": "Monimiaceae",
+                    "Count": 9
+                },
+                {
+                    "Family": "Pinaceae",
+                    "Count": 9
+                },
+                {
+                    "Family": "Ranunculaceae",
+                    "Count": 9
+                },
+                {
+                    "Family": "Capparaceae",
+                    "Count": 9
+                },
+                {
+                    "Family": "Amaranthaceae",
+                    "Count": 9
+                },
+                {
+                    "Family": "Francoaceae",
+                    "Count": 9
+                },
+                {
+                    "Family": "Rhizophoraceae",
+                    "Count": 9
+                },
+                {
+                    "Family": "Dennstaedtiaceae",
+                    "Count": 8
+                },
+                {
+                    "Family": "Schisandraceae",
+                    "Count": 8
+                },
+                {
+                    "Family": "Apiaceae",
+                    "Count": 7
+                },
+                {
+                    "Family": "Menispermaceae",
+                    "Count": 7
+                },
+                {
+                    "Family": "Schizaeaceae",
+                    "Count": 7
+                },
+                {
+                    "Family": "Simmondsiaceae",
+                    "Count": 7
+                },
+                {
+                    "Family": "Brassicaceae",
+                    "Count": 7
+                },
+                {
+                    "Family": "Putranjivaceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Lycopodiaceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Actinidiaceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Asteliaceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Burseraceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Pentaphylacaceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Sarcolaenaceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Polemoniaceae",
+                    "Count": 6
+                },
+                {
+                    "Family": "Zygophyllaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Nyctaginaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Philesiaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Elaeocarpaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Hymenophyllaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Equisetaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Doryanthaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Colchicaceae",
+                    "Count": 5
+                },
+                {
+                    "Family": "Araucariaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Cistaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Cephalotaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Chloranthaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Pennantiaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Hypoxidaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Menyanthaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Blandfordiaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Hernandiaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Marcgraviaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Cunoniaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Ochnaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Velloziaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Caricaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Drosophyllaceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Haemodoraceae",
+                    "Count": 4
+                },
+                {
+                    "Family": "Alismataceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Plumbaginaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Kewaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Smilacaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Berberidaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Santalaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Roridulaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Tecophilaeaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Sphaerosepalaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Hamamelidaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Fouquieriaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Marsileaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Cyclanthaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Orobanchaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Heliconiaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Clethraceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Styracaceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Gunneraceae",
+                    "Count": 3
+                },
+                {
+                    "Family": "Cornaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Hanguanaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Calophyllaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Icacinaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Corynocarpaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Quillajaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Amborellaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Phytolaccaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Potamogetonaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Escalloniaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Liliaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Frankeniaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Stilbaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Pontederiaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Aextoxicaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Buxaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Joinvilleaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Olacaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Alseuosmiaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Rousseaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Moringaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Ophioglossaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Argophyllaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Ephedraceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Chrysobalanaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Platanaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Atherospermataceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Talinaceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Salvadoraceae",
+                    "Count": 2
+                },
+                {
+                    "Family": "Garryaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Aphanopetalaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Linaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Polygalaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Ripogonaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Saururaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Griseliniaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Alstroemeriaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Taxaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Haloragaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Marchantiaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Gentianaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Curtisiaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Papaveraceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Simaroubaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Acoraceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Typhaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Lardizabalaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Gnetaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Eupomatiaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Flagellariaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Petiveriaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Aphloiaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Mazaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Schlegeliaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Psilotaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Hydrocharitaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Physenaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Myristicaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Butomaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Austrobaileyaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Achariaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Bixaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Lindsaeaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Ceratophyllaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Stemonaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Dilleniaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Goodeniaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Loasaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Lonchitidaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Basellaceae",
+                    "Count": 1
+                },
+                {
+                    "Family": "Conocephalaceae",
+                    "Count": 1
+                }
+            ]
+        }
+    ],
+    "scales": [
+        {
+            "name": "xscale",
+            "type": "band",
+            "domain": {
+                "data": "table",
+                "field": "Family"
+            },
+            "range": "width",
+            "padding": 0.05,
+            "round": true
+        },
+        {
+            "name": "yscale",
+            "domain": {
+                "data": "table",
+                "field": "Count"
+            },
+            "nice": true,
+            "range": "height"
+        }
+    ],
+    "axes": [
+        {
+            "orient": "bottom",
+            "scale": "xscale"
+        },
+        {
+            "orient": "left",
+            "scale": "yscale"
+        }
+    ],
+    "marks": [
+        {
+            "type": "rect",
+            "from": {
+                "data": "table"
+            },
+            "encode": {
+                "enter": {
+                    "x": {
+                        "scale": "xscale",
+                        "field": "Family"
+                    },
+                    "width": {
+                        "scale": "xscale",
+                        "band": 1
+                    },
+                    "y": {
+                        "scale": "yscale",
+                        "field": "Count"
+                    },
+                    "y2": {
+                        "scale": "yscale",
+                        "value": 0
+                    }
+                },
+                "update": {
+                    "fill": {
+                        "value": "#4682b4"
+                    }
+                },
+                "hover": {
+                    "fillOpacity": {
+                        "value": 0.7
+                    }
+                }
+            }
+        },
+        {
+            "type": "text",
+            "encode": {
+                "enter": {
+                    "align": {
+                        "value": "center"
+                    },
+                    "baseline": {
+                        "value": "bottom"
+                    },
+                    "fill": {
+                        "value": "#333"
+                    }
+                },
+                "update": {
+                    "x": {
+                        "scale": "xscale",
+                        "field": "Family",
+                        "band": 0.5
+                    },
+                    "y": {
+                        "scale": "yscale",
+                        "field": "Count",
+                        "offset": -2
+                    },
+                    "text": {
+                        "field": "Count"
+                    },
+                    "fillOpacity": [
+                        {
+                            "test": "datum.Count > 0",
+                            "value": 1
+                        },
+                        {
+                            "value": 0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
