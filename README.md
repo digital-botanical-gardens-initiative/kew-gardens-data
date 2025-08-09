@@ -13,3 +13,9 @@ python src/merger.py
 ```
 
 The output data can be downloaded from the `data/output` directory as a single CSV file named `kew_species_list.csv`.
+
+From the cli you can:
+
+```
+wget https://raw.githubusercontent.com/digital-botanical-gardens-initiative/kew-gardens-data/refs/heads/main/data/output/kew-species-list.csv
+```
