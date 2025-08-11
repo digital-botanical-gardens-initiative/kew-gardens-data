@@ -39,6 +39,27 @@ def merge_excel_files(input_directory, output_file):
     # Concatenate all dataframes into a single dataframe
     merged_df = pd.concat(dataframes, ignore_index=True)
 
+    # Is Dead,Accession Number,Catalogue Number,Accepted Name,TaxonomicName,Genus,Family,Provenance Code,Legacy Provenance Code,Country ISO,Last Seen On,source_file
+    # ALIVE,2025-1015,K:LCD-2025-1015*1,Sporobolus durus,Sporobolus durus,Sporobolus,Poaceae,,,"Saint Helena, Ascension, and Tristan da Cunha",29-07-2025,TropicalNursery_Simplified.xlsx
+    # ALIVE,1985-2070,K:LCD-1985-2070*3,Lotus berthelotii,Lotus berthelotii,Lotus,Fabaceae,,,,29-12-2024,TropicalNursery_Simplified.xlsx
+    # ALIVE,2025-767,K:LCD-2025-767*1,Cleistocactus,Cleistocactus,Cleistocactus,Cactaceae,,,,19-06-2025,TropicalNursery_Simplified.xlsx
+
+    # We split the `Accession Number` column to fetch the `Accession Date`
+    # and add it as a new column. For this we split by `-` and take the first part.
+    if "Accession Number" in merged_df.columns:
+        merged_df["Accession Date"] = merged_df["Accession Number"].str.split("-").str[0]
+        print("Added Accession Date column from Accession Number.") 
+    else:
+        print("Accession Number column not found. Skipping Accession Date extraction.")
+
+    # We then drop NAN and keep only rows where the `Accession Date` is before 2015
+    # No need for if statement here, as we already checked the columns
+    # no need for datetime conversion, as we are only interested in the year
+    merged_df.dropna(subset=["Accession Date"], inplace=True)
+    merged_df = merged_df[merged_df["Accession Date"].astype(str).str[:4].astype(int) < 2015]
+    print("Filtered rows to keep only those with Accession Date before 2015.")
+
+
     # We also check that they are no duplicate rows
     # and inform the user if there are any
     initial_row_count = len(merged_df)
@@ -148,10 +169,9 @@ def output_family_barchart(merged_df, output_file):
         json.dump(vega_spec, f, indent=4)
 
 
-
 if __name__ == "__main__":
     input_directory = "data/input"
-    output_file = "data/output/kew-species-list.csv"
+    output_file = "data/output/kew-species-list-prior-2015.csv"
 
     merge_excel_files(input_directory, output_file)
     print(f"Merged data saved to {output_file}")
