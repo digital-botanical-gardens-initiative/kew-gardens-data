@@ -55,9 +55,9 @@ def merge_excel_files(input_directory, output_file):
     # We then drop NAN and keep only rows where the `Accession Date` is before 2015
     # No need for if statement here, as we already checked the columns
     # no need for datetime conversion, as we are only interested in the year
-    merged_df.dropna(subset=["Accession Date"], inplace=True)
-    merged_df = merged_df[merged_df["Accession Date"].astype(str).str[:4].astype(int) < 2015]
-    print("Filtered rows to keep only those with Accession Date before 2015.")
+    # merged_df.dropna(subset=["Accession Date"], inplace=True)
+    # merged_df = merged_df[merged_df["Accession Date"].astype(str).str[:4].astype(int) < 2015]
+    # print("Filtered rows to keep only those with Accession Date before 2015.")
 
 
     # We also check that they are no duplicate rows
@@ -171,7 +171,7 @@ def output_family_barchart(merged_df, output_file):
 
 if __name__ == "__main__":
     input_directory = "data/input"
-    output_file = "data/output/kew-species-list-prior-2015.csv"
+    output_file = "data/output/kew-species-list.csv"
 
     merge_excel_files(input_directory, output_file)
     print(f"Merged data saved to {output_file}")
